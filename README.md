@@ -1,49 +1,47 @@
-# Ferramenta Visual de Update de Banco de Dados
+# 🖥️ Ferramenta Visual de Update de Banco de Dados
 
-Este projeto é uma aplicação desktop em Python com interface gráfica (CustomTkinter) para manipulação segura de bancos de dados SQL Server.
+Aplicação desktop em Python para manipulação **segura** de bancos SQL Server, com interface gráfica moderna (CustomTkinter).
 
-## Funcionalidades
-- Conexão com instâncias SQL Server locais
-- Listagem de bancos, tabelas e colunas reais
-- Filtros avançados (WHERE) e atualização de registros (UPDATE)
-- Backup de dados selecionados
-- Controle transacional (Commit/Rollback)
-- Visualização dos resultados em tabela com scroll
+---
 
-## Requisitos
+## ✨ Funcionalidades
+- 🔗 Conexão fácil com SQL Server local
+- 📋 Listagem de bancos, tabelas e colunas reais
+- 🎯 Filtros avançados (WHERE) e atualização de registros (UPDATE)
+- 💾 Backup de dados selecionados
+- 🔒 Controle transacional (Commit/Rollback)
+- 👀 Visualização dos resultados em tabela com scroll
+
+## 🛠️ Requisitos
 - Python 3.8+
 - SQL Server (local ou rede)
 - Dependências Python:
   - customtkinter
   - pyodbc
 
-## Instalação
-1. Clone o repositório:
-   ```bash
-   git clone <url-do-repositorio>
-   cd <nome-da-pasta>
-   ```
-2. Instale as dependências:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 🚀 Instalação
+```bash
+git clone <url-do-repositorio>
+cd <nome-da-pasta>
+pip install -r requirements.txt
+```
 
-## Como executar
+## ▶️ Como executar
 ```bash
 python app.py
 ```
 
-## Estrutura dos arquivos
-- `app.py` — Interface principal e lógica de navegação
-- `update_utils.py` — Função de update transacional
-- `transaction_utils.py` — Funções de commit/rollback
-- `backup_utils.py` — Função de backup de dados
-- `where_utils.py` — Função utilitária para construção do WHERE
-- `result_view.py` — Componente visual para exibição dos resultados
+## 📁 Estrutura dos arquivos
+- `app.py` — Interface principal
+- `update_utils.py` — Update transacional
+- `transaction_utils.py` — Commit/Rollback
+- `backup_utils.py` — Backup de dados
+- `where_utils.py` — Filtros WHERE
+- `result_view.py` — Visualização dos resultados
 
-## Observações
-- O programa não utiliza autocommit. Todas as alterações só são salvas após pressionar o botão Commit.
-- Para rodar em Windows, é necessário o driver ODBC do SQL Server instalado.
+## ⚠️ Observações
+- O programa **NÃO** utiliza autocommit. Use o botão Commit para salvar.
+- Necessário driver ODBC do SQL Server no Windows.
 
 ---
 
